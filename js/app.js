@@ -21,6 +21,10 @@ nameOne.addEventListener("mouseover", function() {
 //3. Add an event to the div element with the id of 'name2' that will show/hide the following description after clicking on the element.
 //'The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.'
 
+//You'll need to:
+// create a div element with an id of 'descrip2'
+//append this element to the div element with the id of 'name2' 
+
 let nameTwo = document.querySelector("#name2");
 let descTwo = document.createElement("div");
 descTwo.id = "descrip2";
@@ -35,11 +39,19 @@ nameTwo.addEventListener("click", function () {
   }
 })
 
-//You'll need to:
-// create a div element with an id of 'descrip2'
-//append this element to the div element with the id of 'name2' 
-
 //4. Add events to the all the thumbs up icon that will add a count for each time the icon is clicked on for any shoe.
+
+let thumbsUp = document.querySelectorAll("#thumbs");
+let count = 0;
+
+thumbsUp.forEach(function (e) {
+  let zero = document.createElement("span");
+  e.appendChild(zero);
+  zero.innerHTML = 0
+  e.addEventListener("click", function() {
+    zero.innerHTML++;
+  })
+})
 
 //5. Add an event to the plus icon that will increment the price of the Air Jordan V shoe each time the icon is clicked on.
 
