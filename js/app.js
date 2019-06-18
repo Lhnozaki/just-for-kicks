@@ -21,7 +21,19 @@ nameOne.addEventListener("mouseover", function() {
 //3. Add an event to the div element with the id of 'name2' that will show/hide the following description after clicking on the element.
 //'The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.'
 
+let nameTwo = document.querySelector("#name2");
+let descTwo = document.createElement("div");
+descTwo.id = "descrip2";
+descTwo.textContent = "The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.";
+nameTwo.appendChild(descTwo);
 
+nameTwo.addEventListener("click", function () {
+  if(descTwo.style.display === "none") {
+    descTwo.style.display = "block";
+  } else {
+    descTwo.style.display = "none";
+  }
+})
 
 //You'll need to:
 // create a div element with an id of 'descrip2'
