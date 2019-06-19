@@ -74,6 +74,12 @@ document.querySelector("#decrease").addEventListener("click", function() {
 
 //7. Add an event to the Air Jordan XI shoe that will show another colorway for that shoe after hovering over the image. 
 
+document.querySelector("#name6").parentElement.firstChild.addEventListener("mouseover" , function(e) {
+    e.target.src = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRbqe8_4MPwHC6yT0LtqI2WpwKR_cQrbppUEazdotvZsU9wJOvcJhtVDBNibiLC2QEUOhoNHC6kfLfb2xdBln73MiZh-99XodOa_7VryNT78ex8STRJQtcD0w&usqp=CAc";
+});
+
+
+
 //8. Add an event to the Air Jordan XII shoe that will increase the image by 50% after clicking on the image.
 
 //9. Add events to both the plus and minus icon that will add or decrease the price each time the respective icon is clicked on.
