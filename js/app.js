@@ -32,10 +32,10 @@ descTwo.textContent = "The instantly recognizable Jumpman silhouette made its de
 nameTwo.appendChild(descTwo);
 
 nameTwo.addEventListener("click", function () {
-  if(descTwo.style.display === "none") {
-    descTwo.style.display = "block";
-  } else {
+  if(descTwo.style.display === "block") {
     descTwo.style.display = "none";
+  } else {
+    descTwo.style.display = "block";
   }
 })
 
@@ -78,9 +78,12 @@ document.querySelector("#name6").parentElement.firstChild.addEventListener("mous
     e.target.src = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRbqe8_4MPwHC6yT0LtqI2WpwKR_cQrbppUEazdotvZsU9wJOvcJhtVDBNibiLC2QEUOhoNHC6kfLfb2xdBln73MiZh-99XodOa_7VryNT78ex8STRJQtcD0w&usqp=CAc";
 });
 
-
-
 //8. Add an event to the Air Jordan XII shoe that will increase the image by 50% after clicking on the image.
+
+let xii = document.querySelector("#name7").parentElement.firstChild.addEventListener("click", function() {
+  this.style.width = "375px";
+  this.style.height = "375px";
+});
 
 //9. Add events to both the plus and minus icon that will add or decrease the price each time the respective icon is clicked on.
 
