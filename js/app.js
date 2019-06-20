@@ -11,10 +11,10 @@ ship.addEventListener("click", function() {
 let nameOne = document.querySelector("#name1");
 let descOne = document.querySelector("#descrip1");
 nameOne.addEventListener("mouseover", function() {
-  if(descOne.style.display === "none") {
-    descOne.style.display = "block";
-  } else {
+  if(descOne.style.display === "block") {
     descOne.style.display = "none";
+  } else {
+    descOne.style.display = "block";
   }
 })
 
